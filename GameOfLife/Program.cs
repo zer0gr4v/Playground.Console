@@ -64,7 +64,7 @@ internal static class Program
             .AutoRefresh(true)
             .Spinner(Spinner.Known.Default)
             .Start($"[yellow] {(outcome == Outcome.Win ? "You won" : "You lose")}. " +
-                   $"Project {(outcome == Outcome.Lose ? "was full bugs" : "is handed over to support")}.[/]",
+                   $"Project {(outcome == Outcome.Lose ? "was full of bugs" : "is handed over to support")}.[/]",
                 ctx =>
                 {
                     ExecuteAction(() => WriteLogMessage($"PBIs delivered: {_matureFeatures + _newFeatures}"), delay);
